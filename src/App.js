@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Hero from './components/Hero';
+import Navbar from './components/Navbar';
+import Card from './components/Card'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <div className='Home'>
+      <Navbar />
+      <Hero />
+      </div>
+
+      <div className='Projects'>
+      <Card 
+      img={require("./my-project-landing.png")}
+      title="Fuzzy Beginnings Project"
+      description="As an alternative theory, (and because Latin scholars do this sort of thing) someone tracked down a 1914 Latin edition of De Finibus."
+      />
+      </div>
+      
     </div>
   );
 }

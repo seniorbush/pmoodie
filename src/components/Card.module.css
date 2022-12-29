@@ -1,0 +1,36 @@
+.card{
+    overflow: hidden;
+    box-shadow: 0 2px 20px black; 
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 200ms ease in;
+}
+
+.cardImg {
+    height: 12rem;
+    width: 100%;
+    object-fit: contain;
+}
+
+.cardTitle {
+    padding: 1rem;
+}
+
+.cardDescription {
+    padding: 0 .5rem;
+}
+
+.card button {
+    padding: .5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: .5rem;
+    border: solid 2px rgba(188, 158, 61, 0.835);
+    border-radius: 4px;
+    background: transparent;
+    color: rgba(188, 158, 61, 0.835);
+    transition: background 200ms ease-in, color 200ms ease-in;
+}

@@ -1,0 +1,28 @@
+.navbar {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 2rem;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    list-style: none;
+    padding: .5rem 3rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+img{
+    height: 2.5rem;
+    width: 100%;
+}

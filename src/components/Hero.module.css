@@ -1,0 +1,36 @@
+
+.hero {
+    /* height: 100vh; */
+    padding: 3rem 3rem;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+}
+
+.leftSide {
+    text-align: left;
+}
+
+.leftSide h1 {
+    text-align: left;
+    margin: inherit;
+    font-size: 72px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.leftSide h2 {
+    text-align: left;
+    font-size: 30px;
+    margin: inherit;
+    letter-spacing: .25em;
+}
+
+.rightSide img {
+    height: 20rem;
+    width: 100%;
+}
