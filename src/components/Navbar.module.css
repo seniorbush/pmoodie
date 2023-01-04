@@ -1,24 +1,29 @@
 .navbar {
-    position: sticky;
+    position: fixed;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    padding: .5rem 2rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .links {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
 }
 
 li {
     list-style: none;
-    padding: .5rem 3rem;
+    padding: .5rem 5rem;
 }
 
 .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   position: absolute;
+   display: flex;
+   left: 0;
+   padding: .5rem 5rem;
+   padding-top: 1rem;
 }
 
 
