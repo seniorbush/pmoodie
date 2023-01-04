@@ -1,36 +1,63 @@
 
-.hero {
-    /* height: 100vh; */
-    padding: 3rem 3rem;
-    display: grid;
+.main {
+    position: absolute;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: auto;
-    grid-gap: 1rem;
 }
 
-.leftSide {
-    text-align: left;
-}
-
-.leftSide h1 {
-    text-align: left;
-    margin: inherit;
-    font-size: 72px;
-    background: -webkit-linear-gradient(#eee, #333);
+.main h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 102px;
+    /* background: -webkit-linear-gradient(#eee, #333); */
+    background: -webkit-linear-gradient(rgb(138, 16, 169), rgba(248, 222, 55, 0.829));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.leftSide h2 {
-    text-align: left;
-    font-size: 30px;
-    margin: inherit;
-    letter-spacing: .25em;
+.main h2 {
+    font-weight: 600;
+    margin-top: 0;
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: .35em;
+    transition: .5s;
 }
 
-.rightSide img {
-    height: 20rem;
-    width: 100%;
+.main p {
+    font-size: 22px;
+    
 }
+
+
+span:hover {
+    cursor: pointer;
+    background: -webkit-linear-gradient(rgba(248, 222, 55, 0.829), rgb(138, 16, 169));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.icons {
+    
+    padding-top: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.github, .linkedin, .downloadCV {
+    height: 2.5rem;
+    width: 2.5rem;
+    transition: .3s;
+}
+
+.icons a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.github:hover, .linkedin:hover, .downloadCV:hover{
+    transform: scale(1.25);
+}
+
