@@ -1,41 +1,95 @@
 .card{
     overflow: hidden;
-    box-shadow: 0 2px 20px black; 
-    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px 5px;   
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    cursor: pointer;
     transition: transform 200ms ease in;
-    width: 400px;
-    background-color: rgba(29, 29, 29, 0.613);
+    height: 34rem;
+    width: 26rem;
+    background-color: rgba(54, 54, 54, 0.632);
+    padding: .5rem;
+    transition: ease-in-out .4s;
+}
+
+.card:hover{
+    transform: scale(1.03);
+    /* box-shadow: rgba(209, 209, 209, 0.35) 0px 2px 8px 1px;    */
+
+}
+.callToAction{
+    position: relative;
+    display: flex;
 }
 
 .cardImg {
-    height: 12rem;
+    border-radius: 10px;
+    height: 14rem;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
-.cardTitle {
-    padding: 1rem;
+.buttons{
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+    gap: 1rem;
+    
+}
+
+
+.card button {
+    cursor: pointer;
+    text-shadow: 0px  -1px 0px rgba(0,0,0,.5);
+    -webkit-box-shadow: 0px 2px 0px rgba(29, 29, 29, 0.886);
+    background: -webkit-linear-gradient(rgba(120, 120, 120, 0.829), rgb(28, 28, 28));
+    padding: .33rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    font-weight: 600;
+    border: solid 1px #d6d4e0;
+    border-radius: 2px;
+    transition: .3s;    
+    color: #d6d4e0;
     text-align: center;
+}
+
+
+.card button:hover{
+    color: #fff;
+    transform: scale(1.1);
+    
+}
+
+
+.cardTitle {
+    padding: .5rem;
+    text-align: center;
+}
+
+.techList{
+    border-top: solid 1px #d6d4e04e;
+    border-bottom: solid 1px #d6d4e04e;
+    padding: .5rem;
+    padding-bottom: .5rem;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .cardDescription {
-    padding: 0 .5rem;
-    text-align: center;
-
+    overflow-y: auto;
 }
 
-.card button {
-    padding: .5rem;
-    font-weight: bold;
-    font-size: 1rem;
-    margin: .5rem;
-    border: solid 2px rgba(188, 158, 61, 0.835);
-    border-radius: 4px;
-    background: transparent;
-    color: rgba(188, 158, 61, 0.835);
-    transition: background 200ms ease-in, color 200ms ease-in;
+.titles{
+    padding: .25rem;
+    text-align: center;
+}
+
+.card a, a:visited {
+    text-decoration: none;
+    color: inherit;
 }
