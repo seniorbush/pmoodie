@@ -27,9 +27,10 @@
 }
 
 .tech{
+  
   color: #d6d4e0;
-    height: 1.5rem;
-    width: 1.5rem;
-    transition: .3s;
-    display: flex;
+  height: 1.5rem;
+  width: 1.5rem;
+  transition: .3s;
+  display: flex;
 }

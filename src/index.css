@@ -5,6 +5,7 @@
 }
 
 body {
+  
   overflow: hidden;
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -22,7 +23,7 @@ body {
   backdrop-filter: blur(4px);
 
   color: #d6d4e0;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 

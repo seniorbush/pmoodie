@@ -1,4 +1,5 @@
 import styles from "./Navbar.module.css"
+import {FaCircle} from "react-icons/fa"
 import logo from "../assets/pm_logo.png"
 
 export default function Navbar(){
@@ -9,9 +10,9 @@ export default function Navbar(){
             </div>
             <div>
                 <ul className={styles.links}>
-                    <li>About</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+                    <li><FaCircle/></li>
+                    <li><FaCircle/></li>
+                    <li><FaCircle/></li>
                 </ul>
             </div>
         </div>

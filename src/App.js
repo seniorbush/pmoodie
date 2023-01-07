@@ -16,8 +16,8 @@ function App() {
 
   const techList2 = [
     <DiHtml5 className="tech"/>,
-    <DiCss3 className="tech"/>,
     <DiJsBadge className="tech"/>,
+    <DiCss3 className="tech"/>
   ]
 
   return (
@@ -40,7 +40,12 @@ function App() {
         img={require("./assets/basket(2).png")}
         title="EasyBasket"
         tech={techList2}
-        description="As an alternative theory, (and because Latin scholars do this sort of thing) someone tracked down a 1914 Latin edition of De Finibus."
+        description="A web application that utilizes a recipe API allowing 
+        users to select and view various recipes. Upon selecting a recipe, 
+        the ingredients required for the recipe are displayed and added to 
+        a virtual grocery list. The app keeps track of the total number of 
+        ingredients needed as the user continues to add more recipes to the 
+        list."
         />
 
         <Card 
@@ -53,9 +58,7 @@ function App() {
         the CoinGecko and Newsdata.io APIs to provide real-time information 
         about various cryptocurrencies. It also incorporates MongoDB for user 
         authentication and validation. The website is built using Node.js, 
-        Express.js, and EJS, with Chart.js and Bootstrap for styling and layout. 
-        Users can create an account and log in to create a personalized portfolio 
-        of their cryptocurrency holdings, which can be tracked and updated over time."
+        Express.js, and EJS, with Chart.js and Bootstrap for styling and layout."
         />
 
         <Card 
@@ -69,7 +72,7 @@ function App() {
         JavaScript. The user is able to input various loan details, 
         including the principal amount, interest rate, and loan term, 
         and the application will calculate the monthly repayment amount 
-        based on these inputs"
+        based on these inputs."
         />
         
         </div>

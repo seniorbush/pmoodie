@@ -15,9 +15,8 @@
     font-size: 6.25rem;
     background: -webkit-linear-gradient(rgb(138, 16, 169), rgba(248, 222, 55, 0.829));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    	
-    text-shadow: 2px 4px 3px rgba(148, 148, 148, 0.071)
+    -webkit-text-fill-color: transparent;    	
+    text-shadow: 2px 4px 3px rgba(60, 52, 28, 0.225);
 }
 
 .main h2 {
