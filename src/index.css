@@ -1,6 +1,12 @@
-body {
+*{
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  
+  overflow: hidden;
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -13,11 +19,14 @@ body {
   background-blend-mode: saturation;
   background-position: center;
   background-repeat: no-repeat; 
-  background-size: cover;
-  backdrop-filter: blur(10px);
+  background-size:cover;
+  backdrop-filter: blur(4px);
 
   color: #d6d4e0;
+  font-size: 16px;
 }
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

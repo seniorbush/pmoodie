@@ -8,31 +8,38 @@
 }
 
 .main h1 {
+    font-family: 'CGF Locust Resistance', sans-serif;
+    letter-spacing: .5rem;
     margin: 0;
     text-align: center;
-    font-size: 102px;
-    /* background: -webkit-linear-gradient(#eee, #333); */
+    font-size: 6.25rem;
     background: -webkit-linear-gradient(rgb(138, 16, 169), rgba(248, 222, 55, 0.829));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;    	
+    text-shadow: 2px 4px 3px rgba(60, 52, 28, 0.225);
 }
 
 .main h2 {
+    padding-top: 1.5rem;
+    padding-bottom: 3.5rem;
     font-weight: 600;
-    margin-top: 0;
-    font-size: 48px;
+    font-size: 2.5rem;
     text-align: center;
     letter-spacing: .35em;
     transition: .5s;
 }
 
 .main p {
-    font-size: 22px;
+    font-size: 1.25em;
+    padding-bottom: 3.5rem;
     
 }
 
+.main span {
+    cursor: pointer;
+}
 
-span:hover {
+.main span:hover {
     cursor: pointer;
     background: -webkit-linear-gradient(rgba(248, 222, 55, 0.829), rgb(138, 16, 169));
     -webkit-background-clip: text;
@@ -44,9 +51,11 @@ span:hover {
     padding-top: 2rem;
     display: flex;
     gap: 2rem;
+    justify-content: space-evenly;
 }
 
-.github, .linkedin, .downloadCV {
+.github, .linkedin, .downloadCV{
+    color: #d6d4e0;
     height: 2.5rem;
     width: 2.5rem;
     transition: .3s;
