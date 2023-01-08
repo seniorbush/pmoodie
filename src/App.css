@@ -6,9 +6,10 @@
   scroll-snap-type: y mandatory;
   height: 100vh;
   width: 100%;
+
 }
 
-.section{
+.section1, .section2, .section3{
   height: 100vh;
   width: 100%;
   display: flex;
@@ -16,9 +17,37 @@
   align-items: center;
   position: relative;
   scroll-snap-align: center;
+  /* flex-wrap: wrap; */
+  /* flex-shrink: 1; */
 }
 
+.section2, .section3{
+  display: flex;
+  flex-direction: column;  
+  justify-content: space-evenly;
+}
+
+.titleContainer{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+  
+}
+
+.titleContainer h2, .contactTitleText{
+
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: .2em;
+  transition: ease-in-out .5s;
+  color: #d6d4e0c0;
+}
+
+
 .Projects {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -34,3 +63,26 @@
   transition: .3s;
   display: flex;
 }
+
+
+
+@media only screen and (max-width: 800px) {
+  .Projects{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    height: 70vh;
+
+  }
+}
+
+@media only screen and (max-width: 800px) and (orientation: landscape){
+  .Projects{
+    height: 75vh;
+  }
+  .tech{
+    height: 1rem;
+    width: 1rem;
+  }
+}
+

@@ -25,15 +25,18 @@ function App() {
 
       <Navbar />
 
-      <div className='section'>
+      <div className='section1'>
         <Hero />
         
       </div>
            
 
-      <div className='section'>
+      <div className='section2'>
 
         <Fade duration={1500}>
+          <div className="titleContainer">
+            <h2>PROJECTS</h2>
+          </div>
         <div className='Projects'>
         
         <Card 
@@ -48,7 +51,7 @@ function App() {
         list."
         />
 
-        <Card 
+        {/* <Card 
         img={require("./assets/crypto_app(2).png")}
         github="https://github.com/seniorbush/blockberry"
         live="https://blockberry.onrender.com/"
@@ -73,7 +76,7 @@ function App() {
         including the principal amount, interest rate, and loan term, 
         and the application will calculate the monthly repayment amount 
         based on these inputs."
-        />
+        /> */}
         
         </div>
         </Fade>
@@ -81,10 +84,13 @@ function App() {
       </div>
       
 
-      <div className='section'>
+      <div className='section3'>
 
       <Fade duration={1500}>
-        <h2>Contact Page</h2>
+        <div className='titleContainer'>
+          <h2 className="contactTitleText">CONTACT</h2>
+          
+        </div>
       </Fade>
       
       </div>

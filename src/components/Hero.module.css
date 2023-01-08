@@ -1,8 +1,10 @@
 
 .main {
     position: absolute;
+    height: 100vh;
     width: 50%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
 }
@@ -16,22 +18,43 @@
     background: -webkit-linear-gradient(rgb(138, 16, 169), rgba(248, 222, 55, 0.829));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;    	
-    text-shadow: 2px 4px 3px rgba(60, 52, 28, 0.225);
+    text-shadow: 4px 3px 0px rgba(234, 118, 254, 0.391);
+    /* mix-blend-mode: multiply; */
 }
+
+
 
 .main h2 {
     padding-top: 1.5rem;
     padding-bottom: 3.5rem;
     font-weight: 600;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     text-align: center;
     letter-spacing: .35em;
-    transition: .5s;
+    transition: ease-in-out .5s;
+    text-shadow: 3px 2px 0px rgba(234, 118, 254, 0.437);
 }
+
+.main h3 {
+    /* font-family: 'CGF Locust Resistance', sans-serif; */
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 5.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: .2em;
+    transition: ease-in-out .5s;
+    color: #d6d4e0c0;
+    
+    /* text-shadow: 2px 1px 0px rgba(234, 118, 254, 0.437); */
+}
+
+
 
 .main p {
     font-size: 1.25em;
-    padding-bottom: 3.5rem;
+    padding-bottom: 2.5rem;
     
 }
 
@@ -48,13 +71,13 @@
 
 .icons {
     
-    padding-top: 2rem;
+    padding-top: 1rem;
     display: flex;
     gap: 2rem;
     justify-content: space-evenly;
 }
 
-.github, .linkedin, .downloadCV{
+.github, .linkedin, .downloadCV, .arrow{
     color: #d6d4e0;
     height: 2.5rem;
     width: 2.5rem;
@@ -66,7 +89,119 @@
     color: inherit;
 }
 
-.github:hover, .linkedin:hover, .downloadCV:hover{
+.github:hover, .linkedin:hover, .downloadCV:hover, .arrow:hover{
+    cursor: pointer;
     transform: scale(1.25);
 }
 
+.nextPage{
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    margin-top: 5rem;
+   
+}
+
+.arrow {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2.5rem;
+    animation: blinker 5s ease-in-out infinite;
+}
+
+
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  @media only screen and (max-width: 1024px){
+    .main{
+        width:80%
+    }
+    .main h1{
+        font-size: 64px;
+        text-shadow: 2px 2px 0px rgba(234, 118, 254, 0.391);
+     }
+     
+     .main h2{
+         padding-top: 1rem;
+         padding-bottom: 1.5rem;
+         font-size: 20px;
+         text-shadow: 2px 1px 0px rgba(234, 118, 254, 0.437);
+      }
+  }
+
+
+  @media only screen and (max-width: 880px){
+    .main{
+        width:80%
+    }
+    .main h1{
+       font-size: 48px;
+       text-shadow: 2px 2px 0px rgba(234, 118, 254, 0.391);
+    }
+    
+    .main h2{
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+        font-size: 20px;
+        text-shadow: 2px 1px 0px rgba(234, 118, 254, 0.437);
+     }
+     .main h3{
+        font-size: 12px;
+     }
+     .main p{
+        font-size: 14px;
+        text-align: center;
+     }
+     .github, .linkedin, .downloadCV, .arrow{
+        height: 1.5rem;
+        width: 1.5rem;
+        transition: .3s;
+    }
+  }
+
+
+
+  @media only screen and (max-width: 800px) and (orientation: landscape){
+    .main{
+        padding: 1rem;
+        width:80%
+    }
+    .main h1{
+        margin-top: 2rem;
+       font-size: 40px;
+       text-shadow: 2px 2px 0px rgba(234, 118, 254, 0.391);
+       
+    }
+    
+    .main h2{
+        padding-top: .25rem;
+        padding-bottom: 1.5rem;
+        font-size: 18px;
+        text-shadow: 2px 1px 0px rgba(234, 118, 254, 0.437);
+     }
+     .main h3{
+        font-size: 10px;
+        margin-bottom: 2.5rem;
+     }
+     .main p{
+        font-size: 12px;
+        text-align: center;
+        padding-bottom: .15rem;
+     }
+     .github, .linkedin, .downloadCV, .arrow{
+        height: 1.5rem;
+        width: 1.5rem;
+        transition: .3s;
+    }
+    .arrow{
+        margin-bottom: 1rem;
+    }
+  }

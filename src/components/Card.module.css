@@ -1,4 +1,5 @@
 .card{
+    position: relative;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px 5px;   
     border-radius: 10px;
@@ -8,13 +9,14 @@
     transition: transform 200ms ease in;
     height: 34rem;
     width: 26rem;
-    background-color: rgba(54, 54, 54, 0.632);
-    padding: .5rem;
+    background-color: rgba(35, 35, 35, 0.698);
+    /* padding: .5rem; */
     transition: ease-in-out .4s;
 }
 
 .card:hover{
     transform: scale(1.03);
+    
     /* box-shadow: rgba(209, 209, 209, 0.35) 0px 2px 8px 1px;    */
 
 }
@@ -24,15 +26,16 @@
     
 }
 
+.lowerCard{
+    padding: .5rem;
+}
+
 .cardImg {
-    border-radius: 10px;
+    /* border-radius: 10px; */
     height: 14rem;
     width: 100%;
     object-fit: cover;
     box-shadow: rgba(20, 20, 20, 0.755) 0px 2px 2px 1px;   
-
-
-    
 }
 
 .buttons{
@@ -72,7 +75,7 @@
 
 
 .cardTitle {
-    padding: .5rem;
+    padding: .25rem;
     text-align: center;
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.43);
 
@@ -92,14 +95,75 @@
 
 .cardDescription {
     overflow-y: auto;
+    text-align: center;
 }
 
 .titles{
     padding: .25rem;
     text-align: center;
+    color: #d6d4e0c0;
+    
 }
 
 .card a, a:visited {
     text-decoration: none;
     color: inherit;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .card{
+        height: fit-content;
+        width: 77vw;
+        justify-content: center;
+        align-items: center;
+    }
+    .card:hover{
+        transform:none;
+    }
+    .card p{
+        padding-bottom: 5%;
+    }
+  }
+
+  @media only screen and (max-width: 414px) {
+    .card{
+       
+        width: 85vw;
+       
+    }
+
+    .cardImg{
+        height: 40%;
+    }
+    .card button{
+        font-size: 8px;
+    }
+    /* .card{
+        
+    } */
+  }
+
+@media only screen and (max-width: 800px) and (orientation: landscape){
+    .card{
+        height: 100%;
+        width: 65vw;
+     
+        
+    }
+
+    .cardImg{
+        margin-top: 6%;
+        height: 27vh;
+        width:100%;
+        
+        
+        
+    }
+    .card button{
+        font-size: 10px;
+    }
+    .card p{
+        margin-bottom: .5rem;
+    }
 }
