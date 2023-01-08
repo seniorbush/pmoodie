@@ -10,9 +10,9 @@ export default function Navbar(){
             </div>
             <div>
                 <ul className={styles.links}>
-                    <li><FaCircle/></li>
-                    <li><FaCircle/></li>
-                    <li><FaCircle/></li>
+                    <li className={styles.dots}><FaCircle/></li>
+                    <li className={styles.dots}><FaCircle/></li>
+                    <li className={styles.dots}><FaCircle/></li>
                 </ul>
             </div>
         </div>

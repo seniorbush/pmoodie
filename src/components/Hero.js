@@ -1,6 +1,7 @@
 import styles from "./Hero.module.css"
 import {Fade, Slide, AttentionSeeker} from "react-awesome-reveal"
 import {FaLinkedin, FaGithub, FaFileDownload} from "react-icons/fa"
+import {SlArrowDown} from "react-icons/sl"
 // import logo from "../assets/pm_logo.png"
 
 
@@ -14,7 +15,7 @@ export default function Hero(){
                         duration={1150} 
                         delay={1100} 
                         >
-                            <h1>Philip Moodie</h1>
+                        <h1>Philip Moodie</h1>
                         </AttentionSeeker>
                         
                         <AttentionSeeker effect="pulse" 
@@ -55,6 +56,11 @@ export default function Hero(){
                     <a href="https://github.com/seniorbush" target="_blank" rel="noreferrer"><FaGithub className={styles.github}/></a>
                     <a href="../assets/philipmoodie_CV.pdf" download target="_blank" rel="noreferrer"><FaFileDownload className={styles.downloadCV}/></a>
                     
+                </div>
+
+                <div className={styles.nextPage}>
+                    <h3>PROJECTS</h3>
+                    <SlArrowDown className={styles.arrow}/>
                 </div>
 
           </Fade>

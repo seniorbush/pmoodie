@@ -13,12 +13,13 @@ export default function Card(props){
                     <button className={styles.cardLinkRight}><a href={props.live} target="_blank" rel="noreferrer"><TbExternalLink/> Live Site</a></button>
                 </div>
             </div>
-                <h2 className={styles.cardTitle}>{props.title}</h2>
+            <div className={styles.lowerCard}>
+            <h2 className={styles.cardTitle}>{props.title}</h2>
                 <div className={styles.techList}>{props.tech}</div>
                 <h4 className={styles.titles}>Description:</h4>
                 <p className={styles.cardDescription}>{props.description}</p>
-                {/* <h4 className={styles.titles}>Technologies used:</h4> */}
-                
+            </div>
+                               
             </div>
             
             
