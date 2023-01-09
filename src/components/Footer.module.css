@@ -1,0 +1,61 @@
+.nextPage{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nextPage h3{
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: .2em;
+    transition: ease-in-out .5s;
+    color: #d6d4e0c0;
+}
+
+.arrow {
+    margin-bottom: 1rem;
+    animation: blinker 5s ease-in-out infinite;
+    height: 2.2rem;
+    width: 2.2rem;
+}
+
+
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  @media only screen and (max-width: 880px){
+
+     .nextPage h3{
+        font-size: 12px;
+     }
+    
+     .arrow{
+        height: 1.5rem;
+        width: 1.5rem;
+        transition: .3s;
+        margin-bottom: 1rem;
+    }
+  }
+
+  @media only screen and (max-width: 800px) and (orientation: landscape){
+     .nextPage h3{
+        font-size: 10px;
+        
+     }
+    .arrow{
+        height: 1rem;
+        width: 1rem;
+        margin-bottom: .25rem;
+    }
+  }
+  

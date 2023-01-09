@@ -21,30 +21,6 @@
   /* flex-shrink: 1; */
 }
 
-.section2, .section3{
-  display: flex;
-  flex-direction: column;  
-  justify-content: space-evenly;
-}
-
-.titleContainer{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  
-  
-}
-
-.titleContainer h2, .contactTitleText{
-
-  font-weight: 600;
-  font-size: 2rem;
-  text-align: center;
-  letter-spacing: .2em;
-  transition: ease-in-out .5s;
-  color: #d6d4e0c0;
-}
-
 
 .Projects {
   position: relative;
@@ -56,7 +32,6 @@
 }
 
 .tech{
-  
   color: #d6d4e0;
   height: 1.5rem;
   width: 1.5rem;

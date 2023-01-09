@@ -35,20 +35,6 @@
     text-shadow: 3px 2px 0px rgba(234, 118, 254, 0.437);
 }
 
-.main h3 {
-    /* font-family: 'CGF Locust Resistance', sans-serif; */
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 5.5rem;
-    font-weight: 600;
-    font-size: 1rem;
-    text-align: center;
-    letter-spacing: .2em;
-    transition: ease-in-out .5s;
-    color: #d6d4e0c0;
-    
-    /* text-shadow: 2px 1px 0px rgba(234, 118, 254, 0.437); */
-}
 
 
 
@@ -77,7 +63,7 @@
     justify-content: space-evenly;
 }
 
-.github, .linkedin, .downloadCV, .arrow{
+.github, .linkedin, .downloadCV{
     color: #d6d4e0;
     height: 2.5rem;
     width: 2.5rem;
@@ -94,31 +80,7 @@
     transform: scale(1.25);
 }
 
-.nextPage{
-    /* position: absolute; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    bottom: 0;
-    margin-top: 5rem;
-   
-}
 
-.arrow {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 2.5rem;
-    animation: blinker 5s ease-in-out infinite;
-}
-
-
-
-@keyframes blinker {
-    50% {
-      opacity: 0;
-    }
-  }
 
   @media only screen and (max-width: 1024px){
     .main{
@@ -160,7 +122,7 @@
         font-size: 14px;
         text-align: center;
      }
-     .github, .linkedin, .downloadCV, .arrow{
+     .github, .linkedin, .downloadCV{
         height: 1.5rem;
         width: 1.5rem;
         transition: .3s;
@@ -201,7 +163,6 @@
         width: 1.5rem;
         transition: .3s;
     }
-    .arrow{
-        margin-bottom: 1rem;
-    }
+
+    
   }
