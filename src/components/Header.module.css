@@ -1,0 +1,54 @@
+.header {
+    min-height: 10vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    overflow-x: hidden;
+    transition: 0.5s;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo {
+   position: absolute;
+   left: 0;
+   margin-left: 2%;
+   margin-top: .5rem;
+}
+
+.logo img{
+    height: 2rem;
+}
+
+.header h2{
+    
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: .2em;
+  transition: ease-in-out .5s;
+  color: #d6d4e0c0;
+}
+
+
+@media only screen and (max-width: 880px){
+    .header h2{
+        font-size: 1rem;
+    }
+    .logo img{
+        height: 1.25rem;
+    }
+  }
+
+
+/* 
+  @media only screen and (max-width: 800px) and (orientation: landscape){
+    
+
+    
+  } */

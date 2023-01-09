@@ -1,7 +1,6 @@
 import styles from "./Hero.module.css"
 import {Fade, Slide, AttentionSeeker} from "react-awesome-reveal"
 import {FaLinkedin, FaGithub, FaFileDownload} from "react-icons/fa"
-import {SlArrowDown} from "react-icons/sl"
 // import logo from "../assets/pm_logo.png"
 
 
@@ -58,10 +57,7 @@ export default function Hero(){
                     
                 </div>
 
-                <div className={styles.nextPage}>
-                    <h3>PROJECTS</h3>
-                    <SlArrowDown className={styles.arrow}/>
-                </div>
+                
 
           </Fade>
         

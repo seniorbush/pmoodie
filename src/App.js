@@ -1,9 +1,13 @@
 import './App.css';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
-import Card from './components/Card'
+import Card from './components/Card';
+import Header from "./components/Header"
+import Footer from "./components/Footer"
+
 import {Fade} from "react-awesome-reveal"
 import { DiHtml5, DiCss3, DiJsBadge, DiNodejsSmall, DiMongodb } from "react-icons/di";
+
 
 function App() {
   const techList1 = [
@@ -22,21 +26,18 @@ function App() {
 
   return (
     <div className="App">
-
+      
+      <Header/>
       <Navbar />
+      <Footer pageName="PROJECTS"/>
 
       <div className='section1'>
         <Hero />
-        
       </div>
            
 
       <div className='section2'>
-
         <Fade duration={1500}>
-          <div className="titleContainer">
-            <h2>PROJECTS</h2>
-          </div>
         <div className='Projects'>
         
         <Card 
@@ -80,19 +81,11 @@ function App() {
         
         </div>
         </Fade>
-      
+        
       </div>
       
 
       <div className='section3'>
-
-      <Fade duration={1500}>
-        <div className='titleContainer'>
-          <h2 className="contactTitleText">CONTACT</h2>
-          
-        </div>
-      </Fade>
-      
       </div>
       
     </div>
