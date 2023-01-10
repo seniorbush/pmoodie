@@ -4,9 +4,11 @@ import Navbar from './components/Navbar';
 import Card from './components/Card';
 import Header from "./components/Header"
 import Footer from "./components/Footer"
+import Contact from './components/Contact';
 
-import {Fade} from "react-awesome-reveal"
+import {Fade, Slide} from "react-awesome-reveal"
 import { DiHtml5, DiCss3, DiJsBadge, DiNodejsSmall, DiMongodb } from "react-icons/di";
+
 
 
 function App() {
@@ -27,19 +29,21 @@ function App() {
   return (
     <div className="App">
       
-      <Header/>
-      <Navbar />
-      <Footer pageName="PROJECTS"/>
+      {/* <Navbar/> */}
 
       <div className='section1'>
         <Hero />
+        <Footer pageName="PROJECTS"/>
       </div>
            
 
       <div className='section2'>
         <Fade duration={1500}>
+        <Header title="PROJECTS"/>
         <div className='Projects'>
-        
+          
+          
+
         <Card 
         img={require("./assets/basket(2).png")}
         title="EasyBasket"
@@ -81,11 +85,22 @@ function App() {
         
         </div>
         </Fade>
-        
+        <Footer pageName="CONTACT"/>
+
       </div>
       
 
       <div className='section3'>
+      <Fade duration={1800}>
+        
+        <Header title="CONTACT"/>
+
+        <Slide cascade duration={1150} direction="up">   
+          <Contact/>
+        </Slide>
+
+      </Fade>
+        
       </div>
       
     </div>

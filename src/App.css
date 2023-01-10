@@ -17,8 +17,6 @@
   align-items: center;
   position: relative;
   scroll-snap-align: center;
-  /* flex-wrap: wrap; */
-  /* flex-shrink: 1; */
 }
 
 
