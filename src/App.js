@@ -45,7 +45,7 @@ function App() {
           
 
         <Card 
-        img={require("./assets/basket(2).png")}
+        img={require("./assets/basket2.png")}
         title="EasyBasket"
         tech={techList2}
         description="A web application that utilizes a recipe API allowing 
