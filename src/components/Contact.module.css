@@ -8,15 +8,46 @@
     align-items: center;
     height: 60vh;
     width: 60vw;
-    background-image: url("../assets/doodle2.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     transition: ease-in-out .4s;
 }
 
+.contactCard h2{
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: .1em;
+    transition: ease-in-out .5s;
+    background: -webkit-linear-gradient(rgb(138, 16, 169), rgba(248, 222, 55, 0.829));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;    	
+    text-shadow: 1px 1.5px 0px rgba(234, 118, 254, 0.391);
+    font-family: 'Lord Spirit', sans-serif;
+                                                                                                                                                                                                
+}
+
+.contactImg{
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    right: 0;
+    background-image: url("../assets/thanks.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* .logo{
+    position: inherit;
+    display: flex;
+    top: 0;
+    margin-top: .5rem;
+    align-self: center;    
+    height: 3rem;
+    width: 3rem;
+} */
+
 .contactForm{
-    background-color: rgba(35, 35, 35, 0.84);
+    background-color: rgba(35, 35, 35, 0.519);
     height: 100%;
     width: 65%;
     position: absolute;
@@ -37,45 +68,59 @@
     letter-spacing: .2em;
     transition: ease-in-out .5s;
     color: #d6d4e0c0;
-    
+    /* border-top: solid 1px #d6d4e04e; */
+    /* padding-top: .5rem; */
+    border-bottom: solid 1px #d6d4e04e;
+    padding-bottom: .5rem;
+
 }
-    
 
 
-.contactForm input{
-    background: -webkit-linear-gradient(rgba(120, 120, 120, 0.621), rgba(28, 28, 28, 0.732));
+
+
+.contactForm input, .msgBody{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px 5px;   
+    background-color: rgba(35, 35, 35, 0.519);
+
+    /* background: -webkit-linear-gradient(rgba(255, 255, 255, 0.195), rgba(28, 28, 28, 0.732)); */
+    /* background-color: transparent; */
     -webkit-box-shadow: 0px 2px 0px rgba(29, 29, 29, 0.886);
     color: #d6d4e0;
     text-align: left;
     font-size: 1.5em;
+    border-color: transparent;
     width: 100%;
     border-radius: 4px;
     padding: .25rem;
-    margin-top: .1rem;
+    
 }
 
 .msgBody{
-    height: 10rem;
-  
+    height: 8rem;
+    width: 100%;
+    font-family: inherit;
 }
 
 .contactForm button{
     width: fit-content;
     cursor: pointer;
-    text-shadow: 0px  -1px 0px rgba(0,0,0,.5);
+    text-shadow: 1px  2px 1px rgba(0,0,0,.5);
     -webkit-box-shadow: 0px 2px 0px rgba(29, 29, 29, 0.886);
-    background: -webkit-linear-gradient(rgba(120, 120, 120, 0.829), rgb(28, 28, 28));
-    padding: .33rem;
-    padding-left: .5rem;
-    padding-right: .5rem;
-    font-weight: 600;
+    background-image: url("../assets/wave.jpg");
+    background-position: center;
+    background-size: cover;    
+    padding: .25rem;
     border: solid 1px #d6d4e02e;
-    border-radius: 4px;
+    border-radius: 10px;
     transition: .3s;    
     color: #d6d4e0;
     text-align: center;
+    text-transform: uppercase;
     display: flex;
     align-self: center;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: .1em;
 }
 
 .contactForm button:hover{
@@ -86,9 +131,10 @@
 
 .mail{
     color: #d6d4e0c0;
-    height: 3.5rem;
-    width: 3.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
     transition: .3s;
     display: flex;
     align-self: center;
 }
+
