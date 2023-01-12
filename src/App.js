@@ -1,6 +1,5 @@
 import './App.css';
 import Hero from './components/Hero';
-import Navbar from './components/Navbar';
 import Card from './components/Card';
 import Header from "./components/Header"
 import Footer from "./components/Footer"
