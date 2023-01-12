@@ -8,10 +8,10 @@ import Contact from './components/Contact';
 
 import { Swiper, SwiperSlide } from "swiper/react"
 import 'swiper/css';
-import { Navigation, EffectCoverflow, Pagination } from 'swiper';
+import { Navigation, EffectCube, Pagination } from 'swiper';
 import "swiper/css/pagination";
 import 'swiper/css/navigation';
-import 'swiper/css/effect-coverflow';
+import 'swiper/css/effect-cube';
 
 
 import {Fade, Slide} from "react-awesome-reveal"
@@ -55,13 +55,15 @@ function App() {
         <div className='Projects'>
 
           <Swiper
-          modules={[Navigation, EffectCoverflow, Pagination]}
+          modules={[Navigation, EffectCube, Pagination]}
           navigation
           pagination={true}
           effect
           centeredSlides={true}
           speed={800}
+          
           slidesPerView={1}
+          
           loop
           className="cardSwiper"
           >
@@ -72,7 +74,7 @@ function App() {
               live="https://blockberry.onrender.com/"
               title="Blockberry"
               tech={techList1}
-              description="This cryptocurrency pricing and portfolio website uses 
+              description="This cryptocurrency pricing and portfolio website that uses 
               the CoinGecko and Newsdata.io APIs to provide real-time information 
               about various cryptocurrencies. It also incorporates MongoDB for user 
               authentication and validation. The website is built using Node.js, 

@@ -43,12 +43,15 @@ export default function Hero(){
 
           <Fade delay={1900}>
                 
-                <p>Hi there!  My name is Philip and I am a web developer from Northern Ireland
-                    with a passion for creating intuitive and  
-                    visually stunning websites.  I have always been fascinated by design 
-                    and technology, web development has helped me to merge those 
-                    two interests.  I love to learn and stay up-to-date with the 
-                    latest industry trends.</p>
+                <p>Hi there! 
+                    My name is Philip and I am a web developer 
+                    from Northern Ireland with a passion for 
+                    creating intuitive and visually stunning websites. 
+                    Design and technology have always fascinated me. 
+                    Web development has helped me merge those 
+                    interests. I love to learn 
+                    and stay up-to-date with the latest industry trends.
+                    </p>
 
                 <div className={styles.icons}>
                     <a href="https://www.linkedin.com/in/pmoodie/" target="_blank" rel="noreferrer"><FaLinkedin className={styles.linkedin}/></a>
