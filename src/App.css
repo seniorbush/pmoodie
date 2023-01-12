@@ -115,9 +115,11 @@
   .Projects {
     height: 80vh;
     width: 100vw;
+    margin-bottom: 4rem;
   }
   .swiper-pagination-bullet {
     height: .5rem !important;
     width: .5rem !important;
   }
+ 
 }
