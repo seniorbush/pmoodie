@@ -1,11 +1,11 @@
 .card{
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px 5px;   
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
     transition: transform 200ms ease in;
     height: 34rem;
     width: 26rem;
@@ -14,7 +14,7 @@
 }
 
 .card:hover{
-    transform: scale(1.03);
+    /* transform: scale(1.03); */
     
     /* box-shadow: rgba(209, 209, 209, 0.35) 0px 2px 8px 1px;    */
 
@@ -112,7 +112,8 @@
 
 @media only screen and (max-width: 800px) {
     .card{
-        height: fit-content;
+
+        height: 70vh;
         width: 77vw;
         justify-content: center;
         align-items: center;
@@ -126,38 +127,30 @@
   }
 
   @media only screen and (max-width: 414px) {
+    
     .card{
-       
-        width: 85vw;
-       
+        width: 75vw;
     }
-
     .cardImg{
-        height: 40%;
+        height: 12rem;
     }
     .card button{
         font-size: 8px;
     }
-    /* .card{
-        
-    } */
   }
 
 @media only screen and (max-width: 800px) and (orientation: landscape){
     .card{
-        height: 100%;
-        width: 65vw;
-     
-        
+        height: 95%;
+        width: 65vw;  
     }
-
+    .lowerCard{
+        padding: .25rem;
+    }
     .cardImg{
-        margin-top: 6%;
-        height: 27vh;
-        width:100%;
-        
-        
-        
+        /* margin-top: 6%; */
+        height: 25vh;
+        width:100%; 
     }
     .card button{
         font-size: 10px;

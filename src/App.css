@@ -21,14 +21,58 @@
 
 
 .Projects {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
+  height: 100%;
+  width: 70vw;
 }
 
+
+.cardSwiper{
+  width: 100%;
+  height: 100%;
+}
+
+.swiperSlide{
+  -webkit-transform: translateZ(0);
+  width: 100%;
+  height: 100%;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
+  background-color: #d6d4e0c0 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: rgba(254, 100, 249, 0.791) !important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prec:hover{
+}
+
+
+.swiper-button-next{
+  color: #d6d4e0c0 !important;
+}
+
+.swiper-button-prev{
+  color: #d6d4e0c0 !important;
+  
+}
 .tech{
   color: #d6d4e0;
   height: 1.5rem;
@@ -40,18 +84,19 @@
 
 
 @media only screen and (max-width: 800px) {
-  .Projects{
+  /* .Projects{
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
     height: 70vh;
 
-  }
+  } */
 }
 
 @media only screen and (max-width: 800px) and (orientation: landscape){
   .Projects{
-    height: 75vh;
+    width: 90vw;
+    height: 80vh;
   }
   .tech{
     height: 1rem;
@@ -59,3 +104,9 @@
   }
 }
 
+@media only screen and (max-width: 414px) {
+  .Projects {
+    width: 100vw;
+  }
+
+}

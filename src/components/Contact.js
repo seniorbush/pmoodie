@@ -1,6 +1,5 @@
 import styles from "./Contact.module.css"
 import {FiMail} from "react-icons/fi"
-import logo from "../assets/pm_logo.png"
 
 export default function Contact(){
     return (
@@ -9,9 +8,7 @@ export default function Contact(){
 
             <form className={styles.contactForm}>
 
-            {/* <div className={styles.logo}>
-                    <img src={logo} alt=""/>
-                </div> */}
+            
                 <h2>Let's talk!</h2>
                 <label>
                     <span>Name:</span>
@@ -36,8 +33,6 @@ export default function Contact(){
             </form>  
         
             <div className={styles.contactImg}>
-            
-
             </div>
         
         </div>
