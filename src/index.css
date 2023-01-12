@@ -20,6 +20,9 @@ body {
   backdrop-filter: blur(4px);
   color: #d6d4e0;
   font-size: 16px;
+  /* test to remove white bar bounce */
+  min-height: 100%;
+  overflow: hidden;
 }
 
 

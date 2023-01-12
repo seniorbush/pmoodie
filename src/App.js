@@ -59,7 +59,7 @@ function App() {
           pagination={true}
           effect
           centeredSlides={true}
-          speed={800}
+          speed={500}
           
           slidesPerView={1}
           
