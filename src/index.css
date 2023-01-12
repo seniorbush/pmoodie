@@ -12,7 +12,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: 
   linear-gradient(to bottom, #2c2c2c 40%, black 75%), 
-  url("C:\Users\phili\OneDrive\My Documents\Projects\pmoodie-dev-portfolio\pmoodie\src\assets\abstract-background.jpg");
+  url("./assets/abstract-background.jpg");
   background-blend-mode: saturation;
   background-position: center;
   background-repeat: no-repeat; 
@@ -20,6 +20,9 @@ body {
   backdrop-filter: blur(4px);
   color: #d6d4e0;
   font-size: 16px;
+  /* test to remove white bar bounce */
+  min-height: 100%;
+  overflow: hidden;
 }
 
 
