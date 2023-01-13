@@ -114,7 +114,7 @@
     .card{
 
         height: 70vh;
-        width: 77vw;
+        width: 55vw;
         justify-content: center;
         align-items: center;
     }
@@ -130,17 +130,20 @@
     
     .card{
         width: 75vw;
-        
+    }
+    .cardTitle {
+        font-size: 1.5em;
     }
     .cardImg{
-        height: 12rem;
+        height: 28vh;
     }
     .card button{
         font-size: 10px;
     }
     .cardDescription{
-        font-size: 13px;
+        font-size: 12px;
     }
+
   }
 
 @media only screen and (max-width: 800px) and (orientation: landscape){
