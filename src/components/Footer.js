@@ -1,10 +1,15 @@
+import React from "react"
 import {Fade} from "react-awesome-reveal"
 import styles from "./Footer.module.css"
 import {SlArrowDown} from "react-icons/sl"
 
-export default function Footer(props){
+ const Footer = React.forwardRef((props, ref) => {
     return (
-        <div className={styles.nextPage}>
+        <div className={styles.nextPage}
+        ref={ref}
+        onClick={() => {
+            ref.current.scrollIntoView({behaviour:"smooth"});
+        }}>
             <Fade 
             cascade
             duration={1200}
@@ -15,4 +20,7 @@ export default function Footer(props){
             
         </div>
     )
-}
+});
+
+
+export default Footer;
