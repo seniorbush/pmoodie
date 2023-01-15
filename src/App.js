@@ -12,6 +12,7 @@ import "swiper/css/pagination";
 import 'swiper/css/navigation';
 import 'swiper/css/effect-cube';
 
+import { useRef } from 'react';
 
 import {Fade, Slide} from "react-awesome-reveal"
 import { DiHtml5, DiCss3, DiJsBadge, DiNodejsSmall, DiMongodb } from "react-icons/di";
@@ -33,15 +34,20 @@ function App() {
     <DiCss3 className="tech"/>
   ];
 
+  const projectRef = useRef();
+  const contactRef = useRef();
+
   return (
-    
     <div className="App">
      
       {/* <Navbar/> */}
 
       <div className='section1'>
         <Hero />
-        <Footer pageName="PROJECTS"/>
+        <Footer
+        ref={projectRef}
+        pageName="PROJECTS"
+        />
       </div>
            
 
@@ -113,7 +119,8 @@ function App() {
         </div>
         
         </Fade>
-        <Footer pageName="CONTACT"/>
+        <Footer pageName="CONTACT"
+        ref={contactRef}/>
 
       </div>
       
