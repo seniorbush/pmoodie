@@ -5,6 +5,7 @@ export default function Header(props){
        
         <div className={styles.header}>
             <h2>{props.title}</h2>
+            
         </div>
   
     )
