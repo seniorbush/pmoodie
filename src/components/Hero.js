@@ -56,8 +56,8 @@ export default function Hero(){
                 <div className={styles.icons}>
                     <a href="https://www.linkedin.com/in/pmoodie/" target="_blank" rel="noreferrer"><FaLinkedin className={styles.linkedin}/></a>
                     <a href="https://github.com/seniorbush" target="_blank" rel="noreferrer"><FaGithub className={styles.github}/></a>
-                    <a href="../assets/philipmoodie_CV.pdf" download target="_blank" rel="noreferrer"><FaFileDownload className={styles.downloadCV}/></a>
-                    
+                    <FaFileDownload className={styles.downloadCV}/>
+                    {/* <a href="" download target="_blank" rel="noreferrer"><FaFileDownload className={styles.downloadCV}/></a> */}
                 </div>
 
                 

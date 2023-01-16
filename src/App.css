@@ -52,8 +52,8 @@
 }
 
 .swiper-pagination-bullet {
-  margin-left: 1rem !important;
-  margin-right: 1rem !important;
+  margin-left: 1.5rem !important;
+  margin-right: 1.5rem !important;
   background-color: #d6d4e0c0 !important;
   height: .75rem !important;
   width: .75rem !important;
@@ -118,8 +118,8 @@
     margin-bottom: 4rem;
   }
   .swiper-pagination-bullet {
-    height: .5rem !important;
-    width: .5rem !important;
+    height: .6rem !important;
+    width: .6rem !important;
   }
  
 }
