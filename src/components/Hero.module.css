@@ -105,12 +105,12 @@
         width:80%
     }
     .main h1{
-       font-size: 48px;
+       font-size: 54px;
        text-shadow: 2px 2px 0px rgba(234, 118, 254, 0.391);
     }
     
     .main h2{
-        padding-top: 1rem;
+        padding-top: 0;
         padding-bottom: 1.5rem;
         font-size: 22px;
         text-shadow: 2px 1px 0px rgba(234, 118, 254, 0.437);
@@ -123,8 +123,8 @@
         text-align: center;
      }
      .github, .linkedin, .downloadCV{
-        height: 1.5rem;
-        width: 1.5rem;
+        height: 2rem;
+        width: 2rem;
         transition: .3s;
     }
   }

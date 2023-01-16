@@ -4,6 +4,7 @@ import Card from './components/Card';
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import Contact from './components/Contact';
+import Copyright from './components/Copyright';
 
 import { Swiper, SwiperSlide } from "swiper/react"
 import 'swiper/css';
@@ -74,6 +75,7 @@ function App() {
           >
                <SwiperSlide className='swiperSlide'>
               <Card 
+              key="blockBerry"
               img={require("./assets/crypto_app(2).png")}
               github="https://github.com/seniorbush/blockberry"
               live="https://blockberry.onrender.com/"
@@ -87,7 +89,8 @@ function App() {
               />
             </SwiperSlide>
             <SwiperSlide className='swiperSlide'>
-              <Card 
+              <Card
+              key="loan" 
               img={require("./assets/loan_app(2).png")}
               github="https://github.com/seniorbush/Loan_Calculator"
               live="https://leave-me-a-loan.netlify.app/"
@@ -103,6 +106,7 @@ function App() {
             </SwiperSlide>
             <SwiperSlide className='swiperSlide'>
               <Card 
+              key="easyBasket"
               img={require("./assets/basket2.png")}
               title="EasyBasket"
               tech={techList2}
@@ -135,7 +139,7 @@ function App() {
         </Slide>
 
       </Fade>
-        
+      <Copyright/>
       </div>
       
     </div>
