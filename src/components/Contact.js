@@ -34,15 +34,16 @@ export default function Contact(){
         e.preventDefault();
        
         emailjs.sendForm(
-            'service_tejk04r', 
-            'template_tqss8bp', 
+            process.env.REACT_APP_SERVICE_ID, 
+            process.env.REACT_APP_TEMPLATE_ID, 
             form.current, 
-            'FuC6mgnfaUXnJyXbl')
+            process.env.REACT_APP_PUBLIC_KEY)
         .then((result) => {
             console.log("Status: ",result.status, result.text, "| Message sent.");
             Swal.fire({
                 icon: 'success',
-                title: 'Message Sent Successfully'
+                title: 'Message Sent Successfully',
+                text: 'Thank you for getting in touch, I will get back to you as soon as possible.'
               })
               toggleLoading();
             resetForm();
@@ -67,7 +68,7 @@ export default function Contact(){
             className={styles.contactForm}
             onSubmit={sendEmail}>
 
-                <h2>Let's talk!</h2>
+                <h2>Let's talk</h2>
                 <label>
                     <span>Name:</span>
                     <input 
@@ -117,11 +118,15 @@ export default function Contact(){
                     :
                     (<FiMail className={styles.mail}/>)}
                 </button>
+                <div className={styles.cardFooter}>
+      
+                </div>
+
             </form>  
-        
+            
             <div className={styles.contactImg}>
+
             </div>
-        
         </div>
         
     )
