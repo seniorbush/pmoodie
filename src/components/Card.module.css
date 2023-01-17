@@ -95,6 +95,7 @@
 .cardDescription {
     overflow-y: auto;
     text-align: center;
+    padding: .25rem;
 }
 
 .titles{
@@ -141,7 +142,7 @@
         font-size: 10px;
     }
     .cardDescription{
-        font-size: 12px;
+        font-size: 16px;
     }
 
   }
@@ -165,4 +166,18 @@
     .card p{
         margin-bottom: .5rem;
     }
+}
+@media only screen and (max-width: 380px) {
+    .card p{
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (max-width: 300px) {
+    .card p{
+        padding: none;
+        font-size: 11px;
+    }
+
 }
