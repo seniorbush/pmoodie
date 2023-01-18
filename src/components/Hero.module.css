@@ -40,7 +40,7 @@
 
 .main p {
     font-size: 1.25em;
-    padding-bottom: 2.5rem;
+    padding-bottom: 2rem;
     
 }
 
@@ -57,7 +57,7 @@
 
 .icons {
     
-    padding-top: 1rem;
+    padding-top: .5rem;
     display: flex;
     gap: 2rem;
     justify-content: space-evenly;

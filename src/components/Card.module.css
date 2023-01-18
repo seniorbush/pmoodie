@@ -139,10 +139,13 @@
         height: 28vh;
     }
     .card button{
-        font-size: 10px;
+        border-radius: 3px;
+        font-size: 14px;
+        height: 2.5rem;
+        width: 6rem;
     }
     .cardDescription{
-        font-size: 16px;
+        font-size: 15px;
     }
 
   }
@@ -162,6 +165,7 @@
     }
     .card button{
         font-size: 10px;
+        
     }
     .card p{
         margin-bottom: .5rem;
@@ -179,5 +183,10 @@
         padding: none;
         font-size: 11px;
     }
-
+    .card button{
+        border-radius: 2px;
+        font-size: 10px;
+        height: 2rem;
+        width: 5rem;
+    }
 }

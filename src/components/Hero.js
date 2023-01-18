@@ -45,12 +45,13 @@ export default function Hero(){
                 
                 <p>Hi there! 
                     My name is Philip and I am a web developer 
-                    from Northern Ireland with a passion for 
-                    creating intuitive and visually stunning websites. 
+                    from Northern Ireland.
                     Design and technology have always fascinated me. 
                     Web development has helped me merge those 
-                    interests. I love to learn 
-                    and stay up-to-date with the latest industry trends.
+                    interests and become passionate about 
+                    creating innovative and user-friendly websites. 
+                    I love to learn and take on new challenges, always seeking new 
+                    opportunities to improve my skills.
                     </p>
 
                 <div className={styles.icons}>
