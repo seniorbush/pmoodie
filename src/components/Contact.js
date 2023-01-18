@@ -54,6 +54,7 @@ export default function Contact(){
                 title: 'Ooops, something went wrong',
                 text: error.text,
               })
+              toggleLoading();
         });
     };
 
@@ -68,7 +69,7 @@ export default function Contact(){
             className={styles.contactForm}
             onSubmit={sendEmail}>
 
-                <h2>Let's talk</h2>
+                <h2>Leave a message</h2>
                 <label>
                     <span>Name:</span>
                     <input 

@@ -15,7 +15,7 @@
 
 .contactCard h2{
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 2.25rem;
     text-align: center;
     letter-spacing: .1em;
     transition: ease-in-out .5s;
@@ -159,7 +159,7 @@
         width: 85vw;
     }
     .contactCard h2{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .contactImg{
         display: none;
@@ -177,4 +177,5 @@
        
     
     }
+    
 }

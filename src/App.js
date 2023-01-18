@@ -104,20 +104,7 @@ function App() {
               based on these inputs."
               />
             </SwiperSlide>
-            <SwiperSlide className='swiperSlide'>
-              <Card 
-              key="easyBasket"
-              img={require("./assets/basket2.png")}
-              title="EasyBasket"
-              tech={techList2}
-              description="A web application that utilizes a recipe API allowing 
-              users to select and view various recipes. Upon selecting a recipe, 
-              the ingredients required for the recipe are displayed and added to 
-              a virtual grocery list. The app keeps track of the total number of 
-              ingredients needed as the user continues to add more recipes to the 
-              list."
-              />
-            </SwiperSlide>
+            
          
           </Swiper>
         </div>
