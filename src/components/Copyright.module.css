@@ -6,11 +6,21 @@
     flex-direction: column;  
     justify-content: center;
     align-items: center;
-    margin-bottom: 3.6rem;
+    margin-bottom: 3.7rem;
 }
 
 .copyright p{
     font-weight: 600;
     text-align: center;
     color: #d6d4e0c0;
+}
+
+@media only screen and (max-width: 900px) and (orientation: landscape){
+    .copyright{
+        margin-bottom: 1rem;
+    }
+    .copyright p{
+        font-size: 10px;
+    }
+
 }

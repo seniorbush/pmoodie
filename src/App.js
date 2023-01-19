@@ -16,7 +16,7 @@ import 'swiper/css/effect-cube';
 import { useRef } from 'react';
 
 import {Fade, Slide} from "react-awesome-reveal"
-import { DiHtml5, DiCss3, DiJsBadge, DiNodejsSmall, DiMongodb } from "react-icons/di";
+import { DiReact, DiHtml5, DiCss3, DiJsBadge, DiNodejsSmall, DiMongodb } from "react-icons/di";
 
 // import { useState } from 'react';
 
@@ -33,6 +33,14 @@ function App() {
     <DiHtml5 className="tech"/>,
     <DiJsBadge className="tech"/>,
     <DiCss3 className="tech"/>
+  ];
+
+  const techList3 = [
+    <DiHtml5 className="tech"/>,
+    <DiCss3 className="tech"/>,
+    <DiReact className="tech"/>,
+    <DiNodejsSmall className="tech"/>,
+    <DiJsBadge className="tech"/>
   ];
 
   const projectRef = useRef();
@@ -104,7 +112,21 @@ function App() {
               based on these inputs."
               />
             </SwiperSlide>
-            
+            <SwiperSlide className='swiperSlide'>
+              <Card
+              key="pmoodie" 
+              img={require("./assets/pmoodieuk.png")}
+              github="https://github.com/seniorbush/pmoodie"
+              live="https://pmoodie.uk"
+              title="Portfolio Website"
+              tech={techList3}
+              description="This web development project is my portfolio website. 
+              It was my first project using React. 
+              I applied the useState and useRef hooks
+              alongside numerous React libraries.  
+              This website serves as a showcase of my work and skills, I am very proud of the end result and everything i learned in the process."
+              />
+            </SwiperSlide>
          
           </Swiper>
         </div>

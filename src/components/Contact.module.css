@@ -144,7 +144,7 @@
 }
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px){
     .contactForm input, .msgBody{
         padding: .25rem;
         font-size: 1rem;
@@ -167,7 +167,7 @@
     .contactForm{
         width: 100%;
     }
-    
+
     .mail{
         height: 2rem;
         width: 2rem;
@@ -178,4 +178,51 @@
     
     }
     
+}
+@media only screen and (max-width: 900px) and (orientation: landscape){
+    .contactCard{
+        height: 80vh;
+        width: 85vw;
+    }
+    .contactCard h2{
+        font-size: 1.2rem;
+        
+    }
+    .contactForm{
+        width: 55vw;
+        gap: 0;
+        
+    }
+    .contactForm input, .msgBody{
+        padding: .25rem;
+        font-size: 1rem;
+        background-color: rgba(255, 255, 255, 0.224);
+    }
+    .contactForm label{
+        font-size: .6rem;
+        border-bottom: none;
+    }
+   
+    .contactImg{
+        width: 30vw;
+    }
+ 
+    .msgBody{
+        height: 4rem;
+    }
+    .contactForm button{
+        width:10vw;
+        padding: 0;
+        margin-top: 0; 
+        margin-bottom: .5rem;
+    }
+    .mail{
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    .cardFooter p {
+        margin-top: 0;
+       
+    
+    }
 }
