@@ -124,7 +124,7 @@ function App() {
               It was my first project using React. 
               I applied the useState and useRef hooks
               alongside numerous React libraries.  
-              This website serves as a showcase of my work and skills, I am very proud of the end result and everything i learned in the process."
+              This website serves as a showcase of my work and skills, I am very proud of the end result and all the lessons learned in the process."
               />
             </SwiperSlide>
          
