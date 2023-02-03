@@ -57,7 +57,7 @@ export default function Hero(){
                 <div className={styles.icons}>
                     <a href="https://www.linkedin.com/in/pmoodie/" target="_blank" rel="noreferrer"><FaLinkedin className={styles.linkedin}/></a>
                     <a href="https://github.com/seniorbush" target="_blank" rel="noreferrer"><FaGithub className={styles.github}/></a>
-                    <a href="https://drive.google.com/drive/folders/1dKD9DjeRWiGAVITMPzGksXEB42B0rJLT?usp=share_link" target="_blank" rel="noreferrer"><FaFileDownload className={styles.downloadCV}/></a>
+                    <a href="https://drive.google.com/file/d/1otTU9EAWLAqV9IwX-Tko-B6GMqzMZe9k/view?usp=share_link" target="_blank" rel="noreferrer"><FaFileDownload className={styles.downloadCV}/></a>
                     
                     {/* <a href="" download target="_blank" rel="noreferrer"><FaFileDownload className={styles.downloadCV}/></a> */}
                 </div>
