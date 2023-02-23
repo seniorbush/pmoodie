@@ -123,8 +123,8 @@ function App() {
               <Card
               key="pmoodie" 
               img={require("./assets/basket2.png")}
-              github="https://github.com/seniorbush/pmoodie"
-              live="https://https://easybasket.netlify.app/"
+              github="https://github.com/seniorbush/easybasket"
+              live="https://easybasket.netlify.app/"
               title="easyBasket (W.I.P)"
               tech={techList4}
               description="A react web application 
