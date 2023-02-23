@@ -43,6 +43,13 @@ function App() {
     <DiJsBadge className="tech"/>
   ];
 
+  const techList4 = [
+    <DiHtml5 className="tech"/>,
+    <DiCss3 className="tech"/>,
+    <DiReact className="tech"/>,
+    <DiJsBadge className="tech"/>
+  ];
+
   const projectRef = useRef();
   const contactRef = useRef();
 
@@ -115,6 +122,24 @@ function App() {
             <SwiperSlide className='swiperSlide'>
               <Card
               key="pmoodie" 
+              img={require("./assets/basket2.png")}
+              github="https://github.com/seniorbush/pmoodie"
+              live="https://https://easybasket.netlify.app/"
+              title="easyBasket (W.I.P)"
+              tech={techList4}
+              description="A react web application 
+              styled with Material UI.  Utilizes the Spoonacular API 
+              to search and display recipes to the user.  
+              Ability to generate a shopping list based on the 
+              ingredients of the selected recipe. 
+              This feature allows users to easily plan and 
+              organize their grocery shopping based on the 
+              recipes they want to make"
+              />
+            </SwiperSlide>
+            <SwiperSlide className='swiperSlide'>
+              <Card
+              key="pmoodie" 
               img={require("./assets/pmoodieuk.png")}
               github="https://github.com/seniorbush/pmoodie"
               live="https://pmoodie.uk"
@@ -128,7 +153,6 @@ function App() {
               I am very proud of the end result and all the lessons learned in the process."
               />
             </SwiperSlide>
-         
           </Swiper>
         </div>
         
