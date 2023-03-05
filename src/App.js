@@ -78,7 +78,7 @@ function App() {
           <Swiper
           modules={[Navigation, EffectCube, Pagination]}
           navigation
-          pagination={true}
+          pagination={{clickable: true}}
           effect
           centeredSlides={true}
           speed={500}
