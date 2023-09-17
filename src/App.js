@@ -95,9 +95,8 @@ function App() {
                   tech={techList1}
                   description="This cryptocurrency pricing and portfolio website that uses 
               the CoinGecko and Newsdata.io APIs to provide real-time information 
-              about various cryptocurrencies. It also incorporates MongoDB for user 
-              authentication and validation. The website is built using Node.js, 
-              Express.js, and EJS, with Chart.js and Bootstrap for styling and layout."
+              about various cryptocurrencies. uses MongoDB for user 
+              authentication and validation. The website is built using Node.js/Express.js/EJS/Chart.js and Bootstrap for styling."
                 />
               </SwiperSlide>
               <SwiperSlide className="swiperSlide">
@@ -125,10 +124,7 @@ function App() {
               styled with Material UI.  Utilizes the Spoonacular API 
               to search and display recipes to the user.  
               Ability to generate a shopping list based on the 
-              ingredients of the selected recipe. 
-              This feature allows users to easily plan and 
-              organize their grocery shopping based on the 
-              recipes they want to make"
+              ingredients of the selected recipe."
                 />
               </SwiperSlide>
               <SwiperSlide className="swiperSlide">
