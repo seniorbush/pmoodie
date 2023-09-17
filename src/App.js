@@ -36,19 +36,19 @@ function App() {
     <DiMongodb className="tech" />,
   ];
 
-  // const techList2 = [
-  //   <DiHtml5 className="tech" />,
-  //   <DiJsBadge className="tech" />,
-  //   <DiCss3 className="tech" />,
-  // ];
+  const techList2 = [
+    <DiHtml5 className="tech" />,
+    <DiJsBadge className="tech" />,
+    <DiCss3 className="tech" />,
+  ];
 
-  // const techList3 = [
-  //   <DiHtml5 className="tech" />,
-  //   <DiCss3 className="tech" />,
-  //   <DiReact className="tech" />,
-  //   <DiNodejsSmall className="tech" />,
-  //   <DiJsBadge className="tech" />,
-  // ];
+  const techList3 = [
+    <DiHtml5 className="tech" />,
+    <DiCss3 className="tech" />,
+    <DiReact className="tech" />,
+    <DiNodejsSmall className="tech" />,
+    <DiJsBadge className="tech" />,
+  ];
 
   const techList4 = [
     <DiHtml5 className="tech" />,
@@ -100,22 +100,19 @@ function App() {
               Express.js, and EJS, with Chart.js and Bootstrap for styling and layout."
                 />
               </SwiperSlide>
-              {/* <SwiperSlide className='swiperSlide'>
-              <Card
-              key="loan" 
-              img={require("./assets/loan_app(2).png")}
-              github="https://github.com/seniorbush/Loan_Calculator"
-              live="https://leave-me-a-loan.netlify.app/"
-              title="Loan Calculator"
-              tech={techList2}
-              description="This responsive web application allows users to 
-              calculate their monthly loan repayments using HTML, CSS, and 
-              JavaScript. The user is able to input various loan details, 
-              including the principal amount, interest rate, and loan term, 
-              and the application will calculate the monthly repayment amount 
-              based on these inputs."
-              />
-            </SwiperSlide> */}
+              <SwiperSlide className="swiperSlide">
+                <Card
+                  key="fact"
+                  img={require("./assets/doodle2.jpg")}
+                  github="https://github.com/seniorbush/fact_gen"
+                  live="https://dailyfact.netlify.app/"
+                  title="Fact Generator"
+                  tech={techList2}
+                  description="This responsive web application allows users to 
+              make an API call and return a random fact, built using HTML, CSS, and 
+              JavaScript. This simple project was created as tool to encourage my daughter to continue learning throughout the summmer."
+                />
+              </SwiperSlide>
               <SwiperSlide className="swiperSlide">
                 <Card
                   key="pmoodie"
@@ -134,22 +131,21 @@ function App() {
               recipes they want to make"
                 />
               </SwiperSlide>
-              {/* <SwiperSlide className="swiperSlide">
+              <SwiperSlide className="swiperSlide">
                 <Card
                   key="pmoodie"
                   img={require("./assets/pmoodieuk.png")}
                   github="https://github.com/seniorbush/pmoodie"
-                  live="https://pmoodie.uk"
+                  // live="https://pmoodie.uk"
                   title="Portfolio Website"
                   tech={techList3}
-                  description="This web development project is my portfolio website. 
-              It was my first project using React. 
-              I applied the useState and useRef hooks
+                  description="This project is my portfolio website built using React. 
+               I implemented the useState and useRef hooks
               alongside numerous React libraries.  
               This website serves as a showcase of my work and skills, 
               I am very proud of the end result and all the lessons learned in the process."
                 />
-              </SwiperSlide> */}
+              </SwiperSlide>
             </Swiper>
           </div>
         </Fade>
