@@ -93,10 +93,10 @@ function App() {
                   live="https://blockberry.onrender.com/"
                   title="Blockberry"
                   tech={techList1}
-                  description="This cryptocurrency pricing and portfolio website that uses 
-              the CoinGecko and Newsdata.io APIs to provide real-time information 
-              about various cryptocurrencies. uses MongoDB for user 
-              authentication and validation. The website is built using Node.js/Express.js/EJS/Chart.js and Bootstrap for styling."
+                  description="The website is built using Node.js/Express.js/EJS/Chart.js, MongoDB for user 
+                  authentication and validation and Bootstrap for styling.  
+                  Communicates with the CoinGecko and Newsdata.io APIs to provide real-time information 
+              about various cryptocurrencies. "
                 />
               </SwiperSlide>
               <SwiperSlide className="swiperSlide">
@@ -138,8 +138,7 @@ function App() {
                   description="This project is my portfolio website built using React. 
                I implemented the useState and useRef hooks
               alongside numerous React libraries.  
-              This website serves as a showcase of my work and skills, 
-              I am very proud of the end result and all the lessons learned in the process."
+              This website serves as a showcase of my work and skills."
                 />
               </SwiperSlide>
             </Swiper>

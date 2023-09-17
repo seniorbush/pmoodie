@@ -34,7 +34,7 @@ export default function Hero() {
           Northern Ireland. Design and technology have always fascinated me,
           learning to code has helped me merge those interests and become
           passionate about creating innovative software solutions. I love to
-          learn and take on new challenges, always seeking new opportunities to
+          learn and take on new challenges, always seeking opportunities to
           improve my skillset.
         </p>
 
