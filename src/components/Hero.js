@@ -54,7 +54,7 @@ export default function Hero() {
             <FaGithub className={styles.github} />
           </a>
           <a
-            href="https://drive.google.com/file/d/1YcWoh16etd35iFhEKWrmVmd-IwHKseUR/view?usp=share_link"
+            href="https://drive.google.com/file/d/1ihXltBgSk2mZ9Leu2uXfSiXRAFnZ-ign/view?usp=drive_link"
             target="_blank"
             rel="noreferrer"
           >
