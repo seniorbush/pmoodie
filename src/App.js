@@ -3,8 +3,8 @@ import Hero from "./components/Hero";
 import Card from "./components/Card";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Contact from "./components/Contact";
-import Copyright from "./components/Copyright";
+// import Contact from "./components/Contact";
+// import Copyright from "./components/Copyright";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -14,8 +14,8 @@ import "swiper/css/navigation";
 import "swiper/css/effect-cube";
 
 import { useRef } from "react";
-
-import { Fade, Slide } from "react-awesome-reveal";
+//removed: ,Slide   from below
+import { Fade } from "react-awesome-reveal";
 import {
   DiReact,
   DiHtml5,
@@ -58,7 +58,7 @@ function App() {
   ];
 
   const projectRef = useRef();
-  const contactRef = useRef();
+  // const contactRef = useRef();
 
   return (
     <div className="App">
@@ -144,10 +144,10 @@ function App() {
             </Swiper>
           </div>
         </Fade>
-        <Footer pageName="CONTACT" ref={contactRef} />
+        {/* <Footer pageName="CONTACT" ref={contactRef} /> */}
       </div>
 
-      <div className="section3">
+      {/* <div className="section3">
         <Fade duration={1800}>
           <Header title="CONTACT" />
 
@@ -156,7 +156,7 @@ function App() {
           </Slide>
         </Fade>
         <Copyright />
-      </div>
+      </div> */}
     </div>
   );
 }
